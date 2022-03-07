@@ -53,6 +53,6 @@ public class AddSummerDressWithG {
 
     @Then("^My message should be send successfully$")
     public void my_message_should_be_send_successfully() throws Throwable {
-        
+
     }
 }
