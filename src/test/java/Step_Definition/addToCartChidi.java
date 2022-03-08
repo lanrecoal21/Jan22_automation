@@ -19,6 +19,7 @@ public class addToCartChidi extends TestBase {
     @And("^I choose my desired clothing and add to cart and proceed$")
     public void iChooseMyDesiredClothingAndAddToCartAndProceed() {
         addToCartChidiPage page = PageFactory.initElements(driver, addToCartChidiPage.class);
+        page.ClickOnMore();
         page.ClearQuantity();
         page.AddQuantity();
         page.SelectSize();
@@ -68,7 +69,6 @@ public class addToCartChidi extends TestBase {
         addToCartChidiPage page = PageFactory.initElements(driver, addToCartChidiPage.class);
         page.ChooseSubjectHeading();
         page.SelectOrderReference();
-        Thread.sleep(1000);
         page.SelectProduct();
         page.EnterMessage();
         page.ClickSend();
