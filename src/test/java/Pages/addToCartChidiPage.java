@@ -69,6 +69,27 @@ public class addToCartChidiPage extends TestBase {
     @FindBy(how = How.CLASS_NAME, using = "page-heading")
     public static WebElement orderConfirmed;
 
+    @FindBy(how = How.LINK_TEXT, using = "Contact us")
+    public static WebElement contactUs;
+
+    @FindBy(how = How.ID, using = "id_contact")
+    public static WebElement subjectHeading;
+
+    @FindBy(how = How.NAME, using = "id_order")
+    public static WebElement orderReference;
+
+    @FindBy(how = How.NAME, using = "id_product")
+    public static WebElement product;
+
+    @FindBy(how = How.ID, using = "message")
+    public static WebElement message;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"submitMessage\"]/span")
+    public static WebElement sendMessage;
+
+    @FindBy(how = How.CLASS_NAME, using = "alert alert-success")
+    public static WebElement messageSent;
+
 
     //methods declared below
 
@@ -109,6 +130,27 @@ public class addToCartChidiPage extends TestBase {
         //String NameOfNewUser = NewCreatedUSer.getText();
         //    System.out.println(NameOfNewUser);
     }
+
+    public void ClickOnContactUs() {contactUs.click();}
+    public void ChooseSubjectHeading() {
+        Select Heading = new Select(subjectHeading);
+        Heading.selectByIndex(1);
+    }
+    public void SelectOrderReference() {
+        Select Reference = new Select(orderReference);
+        Reference.selectByIndex(1);
+    }
+    public void SelectProduct() {
+        Select Product = new Select(product);
+        Product.selectByIndex(1);
+    }
+    public void EnterMessage() {message.sendKeys("Have my order delivered before 15:00");}
+    public void ClickSend() {sendMessage.click();}
+    public void ConfirmationOfSentMsg() {
+        //String NameOfNewUser = NewCreatedUSer.getText();
+        //    System.out.println(NameOfNewUser);
+    }
+
 
 
 
