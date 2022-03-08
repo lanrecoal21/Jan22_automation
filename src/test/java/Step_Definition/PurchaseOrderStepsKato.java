@@ -6,7 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class PurchaseOrderSteps  extends TestBase {
+public class PurchaseOrderStepsKato extends TestBase {
 
     @Given("^that user is on the website site hompage$")
     public void thatUserIsOnTheWebsiteSiteHompage() {

@@ -16,10 +16,6 @@ import org.openqa.selenium.support.ui.Select;
 public class registerNewUseTest extends TestBase {
 
 
-
-
-
-
     @When("^I enter email to create a new account$")
     public void iEnterEmailToCreateANewAccount() {
         registerNewUserPage page = PageFactory.initElements(driver, registerNewUserPage.class);
