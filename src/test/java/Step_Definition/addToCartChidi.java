@@ -50,6 +50,7 @@ public class addToCartChidi extends TestBase {
         addToCartChidiPage page = PageFactory.initElements(driver, addToCartChidiPage.class);
         page.ConfirmCost2();
         page.ClickOnPaymentMethod();
+        page.ClickOnConfirmOrder();
     }
 
     @And("^I have my items checked out successfully$")
