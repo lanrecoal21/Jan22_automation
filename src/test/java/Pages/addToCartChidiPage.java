@@ -3,7 +3,9 @@ package Pages;
 import Base.TestBase;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
@@ -15,8 +17,11 @@ public class addToCartChidiPage extends TestBase {
     @FindBy(how = How.LINK_TEXT, using = "WOMEN")
     public static WebElement categoryOfClothing;
 
-    @FindBy(how = How.LINK_TEXT, using = "More")
-    public static WebElement moreInfoOnItem;
+    @FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/ul/li[3]/div/div[1]/div/a[1]/img")
+    public static WebElement hoverProduct;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/ul/li[3]/div/div[2]/div[2]/a[2]/span")
+    public static WebElement more;
 
     @FindBy(how = How.ID, using = "quantity_wanted")
     public static WebElement clearQuantityField;
@@ -45,10 +50,10 @@ public class addToCartChidiPage extends TestBase {
     @FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/form/p/button/span")
     public static WebElement proceedToCheckout3;
 
-    @FindBy(how = How.LINK_TEXT, using = "Read the Terms of Service")
+    @FindBy(how = How.CLASS_NAME, using = "iframe")
     public static WebElement readTC;
 
-    @FindBy(how = How.CLASS_NAME, using = "fancybox-item fancybox-close")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"order\"]/div[2]/div/div/a")
     public static WebElement popupTC;
 
     @FindBy(how = How.ID, using = "cgv")
@@ -94,7 +99,14 @@ public class addToCartChidiPage extends TestBase {
     //methods declared below
 
     public void ClickOnWomen() {categoryOfClothing.click();}
-    public void ClickOnMore() {moreInfoOnItem.click();}
+    public void Hover() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)");
+        Actions action = new Actions(driver);
+        WebElement btn = hoverProduct;
+        action.moveToElement(btn).perform();
+    }
+    public void ClickOnMore() {more.click();}
     public void ClearQuantity() {clearQuantityField.clear();}
     public void AddQuantity() {addQuantityWanted.sendKeys("2");}
     public void SelectSize() {
@@ -106,21 +118,32 @@ public class addToCartChidiPage extends TestBase {
     public void ClickProceed1() {proceedToCheckout1.click();}
     public void ConfirmCost() {
 
-        //String NameOfNewUser = NewCreatedUSer.getText();
-        //System.out.println(NameOfNewUser);
+        //driver.get(totalItemCost);
+        //String ActualtotalItemCost = driver.getTitle();
+        //String ExpectedtotalItemCost = new String("$52.00");
+        //softassert.assertEquals(ExpectedtotalItemCost, ActualtotalItemCost);
+        //System.out.println(totalItemCost);
+
     }
 
     public void ClickProceed2() {proceedToCheckout2.click();}
     public void WriteComment() {addComment.sendKeys("I live on the 99th floor");}
     public void ClickProceed3() {proceedToCheckout3.click();}
-    public void ClickOnReadTC() {readTC.click();}
+    public void ClickOnReadTC() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,250)");
+        readTC.click();
+    }
     public void CloseTC() {popupTC.click();}
     public void ClickOnAgreeTC() {agreeTC.click();}
     public void ClickProceed4() {proceedToCheckout4.click();}
     public void ConfirmCost2() {
 
-        //String NameOfNewUser = NewCreatedUSer.getText();
-        //    System.out.println(NameOfNewUser);
+        //driver.get(totalItemCostWithShipping);
+        //String ActualtotalItemCostWithShipping = driver.getTitle();
+        //String ExpectedtotalItemCostWithShipping = new String("$54.00");
+        //softassert.assertEquals(ExpectedtotalItemCostWithShipping, ActualtotalItemCostWithShipping);
+        //System.out.println(totalItemCostWithShipping);
     }
 
     public void ClickOnPaymentMethod() {bankWirePayment.click();}

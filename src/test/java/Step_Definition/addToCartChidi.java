@@ -13,12 +13,12 @@ public class addToCartChidi extends TestBase {
     public void iNavigateToMyDesiredCollection() {
         addToCartChidiPage page = PageFactory.initElements(driver, addToCartChidiPage.class);
         page.ClickOnWomen();
-
     }
 
     @And("^I choose my desired clothing and add to cart and proceed$")
     public void iChooseMyDesiredClothingAndAddToCartAndProceed() {
         addToCartChidiPage page = PageFactory.initElements(driver, addToCartChidiPage.class);
+        page.Hover();
         page.ClickOnMore();
         page.ClearQuantity();
         page.AddQuantity();
