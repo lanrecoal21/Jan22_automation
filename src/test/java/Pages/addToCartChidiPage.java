@@ -118,18 +118,18 @@ public class addToCartChidiPage extends TestBase {
     public void ClickProceed1() {proceedToCheckout1.click();}
     public void ConfirmCost() {
 
-        //driver.get(totalItemCost);
-        //String ActualtotalItemCost = driver.getTitle();
-        //String ExpectedtotalItemCost = new String("$52.00");
-        //softassert.assertEquals(ExpectedtotalItemCost, ActualtotalItemCost);
+        //SoftAssert softAssert = new SoftAssert();
+        //String actualText = driver.get(totalItemCost);
+        //String expectedText = “$52.00”;
+        //softAssert.assertEquals(actualText, expectedText);
         //System.out.println(totalItemCost);
-
     }
 
     public void ClickProceed2() {proceedToCheckout2.click();}
     public void WriteComment() {addComment.sendKeys("I live on the 99th floor");}
     public void ClickProceed3() {proceedToCheckout3.click();}
     public void ClickOnReadTC() {
+        
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,250)");
         readTC.click();
@@ -139,19 +139,22 @@ public class addToCartChidiPage extends TestBase {
     public void ClickProceed4() {proceedToCheckout4.click();}
     public void ConfirmCost2() {
 
-        //driver.get(totalItemCostWithShipping);
-        //String ActualtotalItemCostWithShipping = driver.getTitle();
-        //String ExpectedtotalItemCostWithShipping = new String("$54.00");
-        //softassert.assertEquals(ExpectedtotalItemCostWithShipping, ActualtotalItemCostWithShipping);
-        //System.out.println(totalItemCostWithShipping);
+        //SoftAssert softAssert = new SoftAssert();
+        //String actualText = driver.get(totalItemCost);
+        //String expectedText = “$54.00”;
+        //softAssert.assertEquals(actualText, expectedText);
+        //System.out.println(totalItemCost);
     }
 
     public void ClickOnPaymentMethod() {bankWirePayment.click();}
     public void ClickOnConfirmOrder() {iConfirmMyOrder.click();}
     public void AssertOrderConfirmation() {
 
-        //String NameOfNewUser = NewCreatedUSer.getText();
-        //    System.out.println(NameOfNewUser);
+        //SoftAssert softAssert = new SoftAssert();
+        //String actualText = driver.get(totalItemCost);
+        //String expectedText = “ORDER CONFIRMATION”;
+        //softAssert.assertEquals(actualText, expectedText);
+        //System.out.println(totalItemCost);
     }
 
     public void ClickOnContactUs() {contactUs.click();}
@@ -170,8 +173,13 @@ public class addToCartChidiPage extends TestBase {
     public void EnterMessage() {message.sendKeys("Have my order delivered before 15:00");}
     public void ClickSend() {sendMessage.click();}
     public void ConfirmationOfSentMsg() {
-        //String NameOfNewUser = NewCreatedUSer.getText();
-        //    System.out.println(NameOfNewUser);
+
+        //SoftAssert softAssert = new SoftAssert();
+        //String actualText = driver.get(messageSent);
+        //String expectedText = “Your message has been successfully sent to our team.”;
+        //softAssert.assertEquals(actualText, expectedText);
+        //System.out.println(messageSent);
+
     }
 
 
