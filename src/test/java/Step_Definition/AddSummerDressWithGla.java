@@ -148,11 +148,12 @@ public class AddSummerDressWithGla extends TestBase {
         //page.SelectTheProduct();
 
 
-    //@When("^I click on choose file$")
-    //public void iClickOnChooseFile() {
-        //AddSummerDressWithGPage page = PageFactory.initElements(driver, AddSummerDressWithGPage.class);
-        //page.ClickOnChooseFiles();
-
+    @When("^I click on choose file$")
+    public void iClickOnChooseFile() throws InterruptedException{
+        Thread.sleep(4000);
+        AddSummerDressWithGPage page = PageFactory.initElements(driver, AddSummerDressWithGPage.class);
+        page.ClickOnChooseFiles();
+    }
 
 
     @And("^I write message to support$")

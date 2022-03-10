@@ -32,7 +32,7 @@ Feature: Add to cart
     And I select customer services
     And I selected my order reference
     #And i select product
-    #When I click on choose file
+    When I click on choose file
     And I write message to support
     When I click on send
     Then My message should be sent

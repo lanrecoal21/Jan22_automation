@@ -73,14 +73,14 @@ public class AddSummerDressWithGPage extends TestBase {
     @FindBy(how = How.ID, using = "408253_order_products")
     public static WebElement SelectProduct;
 
-    @FindBy(how = How.ID, using = "fileUpload")
+    @FindBy(how = How.XPATH, using = "//*[@id=\"fileUpload\"]")
     public static WebElement ChooseFiles;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"block_top_menu\"]/ul/li[2]/a")
     public static WebElement DRESSES;
 
     //@FindBy(how = How.XPATH, using = "//*[@id=\"fileUpload\"]")
-    //public static WebElement ChooseFile;
+   // public static WebElement ChooseFile;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"message\"]")
     public static WebElement MessageAboutMyProduct;
@@ -131,7 +131,8 @@ public class AddSummerDressWithGPage extends TestBase {
        // Select SelectTheProducts = new Select (SelectProduct);
         //SelectTheProducts.selectByIndex(1);}
 
-    //public void ClickOnChooseFiles() {ChooseFile.click();}
+
+    public void ClickOnChooseFiles() {ChooseFiles.sendKeys("C:/Users/araba/Automation assigment image");}
 
     public void MessageToSupport() {MessageAboutMyProduct.sendKeys("I want it fitted");}
     public void ClickOnSend() {ClickTheSendKey.click();}
