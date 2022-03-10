@@ -3,10 +3,231 @@
     "line": 2,
     "elements": [
       {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7143622747,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the application homepage",
+            "match": {
+              "location": "common.iAmOnTheApplicationHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1986156423,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select the sign link",
+            "match": {
+              "location": "common.iSelectTheSignLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294566433,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid username",
+            "match": {
+              "location": "validloginTest.i_enter_valid_username()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 137902854,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid password",
+            "match": {
+              "location": "validloginTest.i_enter_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1440671221,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "validloginTest.i_click_the_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46270616,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "validloginTest.i_should_be_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 2656715600,
+              "duration": 10133805328,
+              "status": "passed"
+            },
+            "match": {
+              "location": "common.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Pick Faded Shirt and Checkout Successfully",
+        "description": "",
+        "id": "checkout-kato;pick-faded-shirt-and-checkout-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2702531670,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I navigates to collection",
+            "match": {
+              "location": "addToCartKatoSteps.iNavigatesToCollection()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4976509984,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I selects desired shirt and add to cart and proceed",
+            "match": {
+              "location": "addToCartKatoSteps.iSelectsDesiredShirtAndAddToCartAndProceed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2839962709,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I confirms the cost of item selected and proceed",
+            "match": {
+              "location": "addToCartKatoSteps.iConfirmsTheCostOfItemSelectedAndProceed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3992295749,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I agreed to the Terms and Conditions and proceed",
+            "match": {
+              "location": "addToCartKatoSteps.iAgreedToTheTermsAndConditionsAndProceeds()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1541609608,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I confirms the Total cost of shipping item and select payment method",
+            "match": {
+              "location": "addToCartKatoSteps.iConfirmsTheTotalCostOfShippingItemAndSelectPaymentMethod()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 986003,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I check out items successfully",
+            "match": {
+              "location": "addToCartKatoSteps.iCheckOutItemsSuccessfully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6673869515,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I navigates to the contact us",
+            "match": {
+              "location": "addToCartKatoSteps.iNavigatesToTheContactUs()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1635818651,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enters all required details of order",
+            "match": {
+              "location": "addToCartKatoSteps.iEntersAllRequiredDetailsOfOrder()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47792347,
+              "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: Compound class names not permitted\n  (Session info: chrome\u003d99.0.4844.51)\n  (Driver info: chromedriver\u003d99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}),platform\u003dMac OS X 12.2.1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 45 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027Levis-MBP.lan\u0027, ip: \u0027192.168.1.205\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002712.2.1\u0027, java.version: \u002711.0.14\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:58323}, webauthn:extension:credBlob\u003dtrue, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, unexpectedAlertBehaviour\u003dignore, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}), userDataDir\u003d/var/folders/8f/z_ksh0897sd4_5_4z6l1p8cm0000gn/T/.com.google.Chrome.zLkspT}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d99.0.4844.51, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 908bd2734c63e7566b71ea87b79b7aed\n*** Element info: {Using\u003dclass name, value\u003dalert alert-success}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:457)\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)\n\tat Pages.addToCartKatoPage.Confirmatory_Message(addToCartKatoPage.java:118)\n\tat Step_Definition.addToCartKatoSteps.iShouldHaveMessageSentSuccessfullyToCustomerCare(addToCartKatoSteps.java:80)\n\tat ✽.Then I should have message sent successfully to customer care(addToCartKato.feature:21)\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "I should have message sent successfully to customer care",
+            "match": {
+              "location": "addToCartKatoSteps.iShouldHaveMessageSentSuccessfullyToCustomerCare()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CheckOut Kato",
+    "description": "",
+    "id": "checkout-kato",
+    "keyword": "Feature",
+    "uri": "addToCartKato.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 266441,
               "status": "passed"
             },
             "match": {
@@ -23,7 +244,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3936521900,
+              "duration": 1536595099,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +256,7 @@
           },
           {
             "result": {
-              "duration": 1457060800,
+              "duration": 1542046395,
               "status": "passed"
             },
             "line": 7,
@@ -52,802 +273,6 @@
     "description": "",
     "id": "common",
     "keyword": "Feature",
-    "uri": "common.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@Common"
-      }
-    ]
-  },
-  {
-    "comments": [
-      {
-        "line": 1,
-        "value": "#@ignore"
-      }
-    ],
-    "line": 2,
-    "elements": [
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1266714700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1356826900,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 68100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 92265300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"lanre.ikues@gmail.com\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lanre.ikues@gmail.com",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 75979400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"testing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testing",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1289094000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 56554000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"Authentication failed.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Authentication failed.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1420074200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1809621400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 38300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 87639500,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"lanre.ikuesan@gmail.com\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lanre.ikuesan@gmail.com",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 76260700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"testi\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testi",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1138441300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 38396100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"Authentication failed.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Authentication failed.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1307330200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2020213100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 74600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 71743100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"lanre.ikuesangmail.com\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lanre.ikuesangmail.com",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 76325700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"testing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testing",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 870490600,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 29787100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"Invalid email address.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Invalid email address.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1112876300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1745398100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 32100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 69869200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 75784000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"testing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "testing",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 866484500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 27826400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"An email address required.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "An email address required.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1421273000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1718592100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 25100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;6",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 72244700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"lanre.ikuesan@gmail.com\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lanre.ikuesan@gmail.com",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 60413900,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1192676800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31460700,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"Password is required.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Password is required.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1042385800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the application homepage",
-            "match": {
-              "location": "common.iAmOnTheApplicationHomepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1336486000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I select the sign link",
-            "match": {
-              "location": "common.iSelectTheSignLink()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 51100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "common.setup()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "login with invalid credentials should return the correct error message",
-        "description": "",
-        "id": "login;login-with-invalid-credentials-should-return-the-correct-error-message;;7",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 73679100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "You enter \"\" address",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 11
-                }
-              ],
-              "location": "invalidLogin.youEnterAddress(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 61724500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "You enter my \"\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "",
-                  "offset": 14
-                }
-              ],
-              "location": "invalidLogin.youEnterMy(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 854404400,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "We click the login button",
-            "match": {
-              "location": "invalidLogin.weClickTheLoginButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 31854000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "we should get the correct \"An email address required.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "An email address required.",
-                  "offset": 27
-                }
-              ],
-              "location": "invalidLogin.weShouldGetTheCorrect(String)"
-            },
-            "matchedColumns": [
-              2
-            ],
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Login",
-    "description": "",
-    "id": "login",
-    "keyword": "Feature",
-    "uri": "invalidLogin.feature"
+    "uri": "common.feature"
   }
 ]

@@ -14,6 +14,7 @@ public class TestBase {
 
     public static Properties CONFIG = null;
     public static WebDriver driver = null;
+
     public void initialize() throws IOException {
         if (driver == null) {
 //         This code will read the config property file
@@ -27,7 +28,7 @@ public class TestBase {
                 System.setProperty("webdriver.chrome.driver", "C:\\IeDriverServer.exe");
                 driver = new InternetExplorerDriver();
             } else if (CONFIG.getProperty("browser").equals("chrome")) {
-                System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "/Users/levihabila/IdeaProjects/chromedriver");
                 driver = new ChromeDriver();
             }
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
