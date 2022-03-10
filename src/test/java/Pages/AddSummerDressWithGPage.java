@@ -132,7 +132,7 @@ public class AddSummerDressWithGPage extends TestBase {
         //SelectTheProducts.selectByIndex(1);}
 
 
-    public void ClickOnChooseFiles() {ChooseFiles.sendKeys("C:/Users/araba/Automation assigment image");}
+    public void ClickOnChooseFiles() {ChooseFiles.sendKeys("c:\\Automation.PNG");}
 
     public void MessageToSupport() {MessageAboutMyProduct.sendKeys("I want it fitted");}
     public void ClickOnSend() {ClickTheSendKey.click();}
