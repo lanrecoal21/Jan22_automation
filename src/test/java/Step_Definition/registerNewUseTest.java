@@ -1,3 +1,4 @@
+
 package Step_Definition;
 
 import Base.TestBase;
@@ -14,10 +15,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class registerNewUseTest extends TestBase {
-
-
-
-
 
 
     @When("^I enter email to create a new account$")

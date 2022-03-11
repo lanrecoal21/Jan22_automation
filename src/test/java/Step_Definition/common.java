@@ -14,9 +14,6 @@ import java.net.URL;
 
 
 public class common extends TestBase {
-
-
-
     @Before
     public void setup() throws IOException {
         initialize();
@@ -27,7 +24,6 @@ public class common extends TestBase {
         driver.manage().deleteAllCookies();
         driver.get(CONFIG.getProperty("URL"));
         driver.manage().window().maximize();
-
     }
 
     @And("^I select the sign link$")

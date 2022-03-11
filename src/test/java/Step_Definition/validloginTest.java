@@ -12,8 +12,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class validloginTest extends TestBase {
 
 
-
-
     @When("^I enter valid username$")
     public void i_enter_valid_username() throws Throwable {
         driver.findElement(By.id("email")).sendKeys("lanre.ikuesan@gmail.com");
@@ -39,7 +37,7 @@ public class validloginTest extends TestBase {
         Assert.assertEquals(ExpectedLoggedUSer, ActualLoggedUser);
         System.out.println(ActualLoggedUser);
 
-        driver.quit();
+
 
     }
 }
