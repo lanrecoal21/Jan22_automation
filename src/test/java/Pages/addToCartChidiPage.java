@@ -89,6 +89,9 @@ public class addToCartChidiPage extends TestBase {
     @FindBy(how = How.ID, using = "message")
     public static WebElement message;
 
+    @FindBy(how = How.ID, using = "fileUpload")
+    public static WebElement myFileToUpload;
+
     @FindBy(how = How.XPATH, using = "//*[@id=\"submitMessage\"]/span")
     public static WebElement sendMessage;
 
@@ -129,7 +132,7 @@ public class addToCartChidiPage extends TestBase {
     public void WriteComment() {addComment.sendKeys("I live on the 99th floor");}
     public void ClickProceed3() {proceedToCheckout3.click();}
     public void ClickOnReadTC() {
-        
+
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,250)");
         readTC.click();
@@ -171,6 +174,7 @@ public class addToCartChidiPage extends TestBase {
         Product.selectByIndex(1);
     }
     public void EnterMessage() {message.sendKeys("Have my order delivered before 15:00");}
+    public void HitOnAttachFile() {myFileToUpload.sendKeys("/Users/neptune/Downloads/dress.jpg.jpg");}
     public void ClickSend() {sendMessage.click();}
     public void ConfirmationOfSentMsg() {
 

@@ -72,6 +72,7 @@ public class addToCartChidi extends TestBase {
         page.SelectOrderReference();
         page.SelectProduct();
         page.EnterMessage();
+        page.HitOnAttachFile();
         page.ClickSend();
     }
 
